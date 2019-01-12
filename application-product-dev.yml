@@ -2,7 +2,15 @@ server:
   port: 8002
 spring:
   application:
-    name: PLAT-SERVICE-TEST #给提供者取一个名称
+    name: PLAT-SERVICE-DEV #给提供者取一个名称
+    datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/aigou_product
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:org/morality/mapper/*Mapper.xml
+  type-aliases-package: org.morality.domain,org.morality.query
 eureka:
   client:
     service-url:
