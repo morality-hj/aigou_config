@@ -14,6 +14,6 @@ zuul:
   routes:
     myuser.serviceId: PLAT-SERVICE
     myuser.path: /plat/**
-    myproduct.serviceId:PRODUCT-SERVICE
+    myproduct.serviceId: PRODUCT-SERVICE
     myproductmyproduct.path: /product/**
   ignored-services: "*" #忽略我们的服务，相当于以前的访问方式不行了
